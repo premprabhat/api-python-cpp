@@ -1,0 +1,1 @@
+docker run --rm -e PLAT=manylinux2010_x86_64 -v %cd%:/io dev /io/build-wheels.sh
