@@ -24,4 +24,5 @@ jobs:
     - name: Build package
       run: |
         chmod 777 ./build.sh
+        chmod 777 ./build-wheels.sh
         ./build.sh
