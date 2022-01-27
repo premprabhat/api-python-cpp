@@ -22,4 +22,6 @@ jobs:
       with:
         python-version: '3.x'
     - name: Build package
-      run: ./build.sh
+      run: |
+        chmod 777 ./build.sh
+        ./build.sh
