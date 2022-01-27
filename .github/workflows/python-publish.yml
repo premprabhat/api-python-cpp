@@ -22,4 +22,4 @@ jobs:
       with:
         python-version: '3.x'
     - name: Build package
-      run: ./build-wheels.sh
+      run: ./build.sh
