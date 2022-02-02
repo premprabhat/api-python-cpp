@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 2.8)
 set(CMAKE_LEGACY_CYGWIN_WIN32 1) 
 project(api-python-cpp)
+add_subdirectory(pybind11)
 add_subdirectory(contrib/pybind11)
 
 
