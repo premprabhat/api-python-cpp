@@ -21,7 +21,7 @@ jobs:
       run: git submodule update --init --recursive
     - name: pybind11
       run: |
-        git submodule add -b stable ../../pybind/pybind11 pybind11
+        git submodule add -b stable ../../pybind/pybind11 contrib/pybind11
         git submodule update --init
     - name: Set up Python
       uses: actions/setup-python@v2
