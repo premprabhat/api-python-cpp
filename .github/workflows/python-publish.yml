@@ -42,6 +42,7 @@ jobs:
     - name: Build cpp
       run: |
         git clone https://github.com/dolphindb/api-cplusplus
+        cd api-cplusplus
         g++ main.cpp -std=c++11 -DLINUX -D_GLIBCXX_USE_CXX11_ABI=0 -DLOGGING_LEVEL_2 -O2 -I../include   -lDolphinDBAPI -lpthread -lssl -L../bin/linux_x64/ABI0  -Wl,-rpath,.:../bin/linux_x64/ABI0 -o main
     - name: Build package
       run: |
